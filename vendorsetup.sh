@@ -48,13 +48,9 @@
 	export FOX_USE_NANO_EDITOR=1
 	# 添加phhusson's lptools工具
 	export OF_ENABLE_LPTOOLS=1
-
-	## 硬件功能设定
-	# 没有绿色led
-	export OF_USE_GREEN_LED=1
-
-        # Set quick backup items
-        export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
+        
+        # 使用magisk处理所有boot和recovery镜像，
+	export OF_USE_MAGISKBOOT_BOOT=1
 
 	# 当安装MIUI或者在MIUI上安装橙狐zip，使用magisk处理所有boot和recovery镜像，防止橙狐被MIUI官方recovery替换
 	export OF_FORCE_MAGISKBOOT_BOOT_PATCH_MIUI=1
